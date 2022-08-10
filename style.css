@@ -23,10 +23,10 @@
 /*  starting window   */
 
 body{
-	background: #f6fe82;
+	background: rgb(246, 254, 130);
 }
 
-.start-game, .container{
+.container{
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -94,3 +94,83 @@ body{
 	cursor: pointer;
 }
 
+.block.x, .block.x2,
+.block.y, .block.y2{
+	cursor: not-allowed;
+}
+
+.board.x .block:not(.x):not(.y):hover{
+	background: var(--female-1)no-repeat;
+	background-color: #f6fe82;
+	background-size: cover;
+	
+}
+.board.x2 .block:not(.x2):not(.y2):hover{
+	background: var(--female-2)no-repeat;
+	background-color: #f6fe82;
+	background-size: cover;	
+}
+
+.board.y .block:not(.y):not(.x):hover{
+	background: var(--male-1)no-repeat;
+	background-color: #f6fe82;
+	background-size: cover;
+	
+}
+.board.y2 .block:not(.y2):not(.x2):hover{
+	background: var(--male-2)no-repeat;
+	background-color: #f6fe82;
+	background-size: cover;
+	
+}
+
+
+.block.x{
+	background: var(--female-1) var(--text-pink) no-repeat;
+	background-size: cover;
+	
+}
+.block.y{
+	background: var(--male-1) var(--text-btn) no-repeat;
+	background-size: cover;
+	
+}
+.block.x2{
+	background: var(--female-2) var(--text-pink) no-repeat;
+	background-size: cover;
+	
+}
+.block.y2{
+	background: var(--male-2) var(--text-btn) no-repeat;
+	background-size: cover;
+	
+}
+
+/*  Draw and winner window */
+
+.start-game, .draw-msg,.winner-msg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(246, 254, 130,0.938);
+}
+
+.draw-msg, .winner-msg{
+	display: none;
+}
+
+.draw-msg.show, .winner-msg.show{
+	display: flex;
+}
+
+.start-game .profile .img > img.selected{
+	background-color: var(--text-selected);
+	border: 2px solid var(--text-light);
+	border-radius: 20px;
+}

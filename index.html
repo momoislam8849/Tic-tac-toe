@@ -13,7 +13,7 @@
 <body>
 
     <!--Select game window-->
-    <div class="start-game hide">
+    <div class="start-game">
         <h1 class="text-light">Select Character</h1>
         <div class="profile">
             <div class="img">
@@ -21,8 +21,8 @@
                 <img src="assets/boy.png" class="id" data-id="y">
             </div>
             <div class="img">
-                <img src="assets/woman.png" class="id" data-id="y2">
-                <img src="assets/man.png" class="id" data-id="x2">
+                <img src="assets/woman.png" class="id" data-id="x2">
+                <img src="assets/man.png" class="id" data-id="y2">
                 
             </div>
         </div>
@@ -33,10 +33,10 @@
     <!--game board-->
 
     <div class="container">
-        <div class="board" id="board">
+        <div class="board " id="board">
+            <div class="block " data-cell></div>
             <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
-            <div class="block" data-cell></div>
+            <div class="block " data-cell></div>
             <div class="block" data-cell></div>
             <div class="block" data-cell></div>
             <div class="block" data-cell></div>
@@ -46,6 +46,23 @@
             
         </div>
     </div>
+
+    <!--Draw window-->
+    <div class="draw-msg">
+        <div class="draw">
+            <h1 class="text-center">Draw</h1>
+        </div>
+        <button id="drawBtn" class="primary-btn">Play Again</button>
+    </div>
+
+    <!--winner window-->
+    <div class="winner-msg">
+        <h1 class="text-center">Winner</h1>
+        <div class="winner"></div>
+        <button id="restartBtn" class="primary-btn">Restart</button>
+    </div>
     
+
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
