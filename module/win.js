@@ -12,7 +12,7 @@ export  const WIN_COMBINATIONS = [
 
 ];
 
-//check for winner
+//check for winners
 
 export function checkWin(currentClass,blockElements){
     let winMatch = [];
