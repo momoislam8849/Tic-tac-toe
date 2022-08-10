@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins&family=Roboto:wght@400;500;700&family=Rubik&display=swap" rel="stylesheet">
+
+
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <!--Select game window-->
+    <div class="start-game hide">
+        <h1 class="text-light">Select Character</h1>
+        <div class="profile">
+            <div class="img">
+                <img src="assets/girl.png" class="id" data-id="x">
+                <img src="assets/boy.png" class="id" data-id="y">
+            </div>
+            <div class="img">
+                <img src="assets/woman.png" class="id" data-id="y2">
+                <img src="assets/man.png" class="id" data-id="x2">
+                
+            </div>
+        </div>
+
+        <button class="primary-btn" id="startBtn">Start Game</button>
+    </div>
+
+    <!--game board-->
+
+    <div class="container">
+        <div class="board" id="board">
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
