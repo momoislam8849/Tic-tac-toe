@@ -62,3 +62,26 @@ export function markCell(cell,currentClass){
 export function swapTurns(turn){
     return turn = !turn;
 }
+
+
+// end game function
+
+export function endGame(draw,winEL,drawEL){
+    if(!draw){
+        winEL.classList.add("show");
+    }
+    else{
+        drawEL.classList.add("show");
+    }
+}
+
+
+//use to check the draw result
+
+export function isDraw(flag){
+    if(flag.length) return;
+    return [...GAME.blockElements].every(cell =>{
+        return cell.classList.contains(GAME.X_CLASS) ||
+        cell.classList.contains(GAME.Y_CLASS)
+    })
+}
