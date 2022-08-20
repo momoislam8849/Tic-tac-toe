@@ -1,7 +1,7 @@
 # Tic-tac-toe
 
 
-![Tic Tac Toe](./assets/project.jpg)
+![Tic Tac Toe](./assets/project.png)
 
 ## Welcome! 👋
 
